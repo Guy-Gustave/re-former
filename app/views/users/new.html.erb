@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <title>Simple Sign up from</title>
   <head>
@@ -90,4 +90,15 @@
       </div>
     </form>
   </body>
-</html>
+</html> -->
+
+<%= form_tag("/users", method: "post") do %><br><br> <br><br> 
+  <%= label_tag(:username, "username")%>
+  <%= text_field_tag(:username)%><br><br>
+  <%= label_tag(:email, "Email:") %>
+  <%= email_field_tag(:email) %><br><br>
+  <%= label_tag(:password, "password") %>
+  <%= password_field_tag(:password) %><br><br>
+  <%= submit_tag("Submit") %>
+<% end %>
+
